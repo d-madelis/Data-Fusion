@@ -59,12 +59,10 @@ DData-Fusion/
 │       ├── profiles/        # Profile plots for each well
 │       ├── pred_vs_true_per_profile_layer_de.png
 │       └── ratio_histogram.png
-├── plots/                   # Generated diagnostic and result plots
 ├── src/                     # Helper modules and utilities
-├── regression.py            # IC regression pipeline
-├── classification.py        # Lithology classification pipeline
-├── requirements.txt         # Dependency list
-├── license.txt              # Project license
+│   ├──  regression.py            # IC regression pipeline
+│   └──classification.py        # Lithology classification pipeline
+├── LICENSE.txt              # Project license
 └── README.md                # This file
 ```
 
