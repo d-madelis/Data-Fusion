@@ -41,7 +41,7 @@ Features:
 ## 📁 Repository Structure
 
 ```
-Data-Fusion/
+DData-Fusion/
 ├── data/
 │   ├── raw/                 # Original HDF5 files
 │   │   ├── coastal_data.h5
@@ -50,11 +50,21 @@ Data-Fusion/
 │   └── splits/              # Train/val split identifiers
 │       ├── train_names.npy
 │       └── val_names.npy
+├── results/                # Model predictions and diagnostics
+│   ├── PyTorch/
+│   │   ├── profiles/        # Profile plots for each well
+│   │   ├── pt_pred_vs_true_per_profile_layer.png
+│   │   └── pt_ratio_histogram.png
+│   └── RF/
+│       ├── profiles/        # Profile plots for each well
+│       ├── pred_vs_true_per_profile_layer_de.png
+│       └── ratio_histogram.png
 ├── plots/                   # Generated diagnostic and result plots
 ├── src/                     # Helper modules and utilities
 ├── regression.py            # IC regression pipeline
 ├── classification.py        # Lithology classification pipeline
 ├── requirements.txt         # Dependency list
+├── license.txt              # Project license
 └── README.md                # This file
 ```
 
